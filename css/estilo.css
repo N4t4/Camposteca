@@ -1,0 +1,270 @@
+/*reset CSS*/*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+html{
+	font-family: arial;
+}
+
+body{
+	background-color: #DDD;	
+	background-image: url(../img/bg.png);
+}
+
+body>header{
+	background-color: #AAA;
+}
+body>header img{
+	margin: 3px;
+	width: 110px;
+}
+h1{
+	padding-top: 20px;
+}
+body>footer{
+	clear: both;	
+	height: 50px;
+	background-color: #555;
+}
+
+body>nav{
+	overflow: hidden;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-image: url(../img/menu-bg.png);
+	margin-bottom: 10px;
+}
+body>nav ul{
+	list-style: none;
+	overflow: hidden;
+	display: table;
+	margin: auto;
+	background-image: url(../img/0001.png);
+	background-repeat: no-repeat;
+	padding-bottom: 6px;
+}
+body>nav ul li{
+	float: left;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100px;
+}
+body>nav ul li a{
+	text-decoration: none;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin: 5px;
+	font-size: 18px;
+	color: black;
+}
+body>nav ul li a:hover{
+	border-radius: 5px 5px 5px 5px;
+	margin-bottom: -1px;
+	color: rgb(190, 61, 61);
+	text-decoration: underline;
+}
+
+#conteiner{
+	margin: auto;
+	max-width: 60%;
+	margin-bottom: 10px;
+}
+#conteiner>article{
+	float: left;
+	min-height: 800px;
+	margin: auto;
+	width: 75%;
+	background-color: white;
+	margin-left: -2px;
+}
+#conteiner>article>h2{
+	border-bottom: solid 1px green;
+	margin-bottom: 10px;
+	width: 93%;
+	margin-left: 5px;
+	padding-left: 20px;
+	padding-top: 10px;
+	color: green;
+}
+#conteiner>aside{
+	float: left;
+	height: 500px;
+	width: 24%;
+	margin-left: 0.35%;
+	background-color: white;
+}
+
+.gb-color1{
+	background-color: #0caa60;
+}
+.border-color1{
+	border: 1px solid #0caa60;
+}
+.shadow{
+	box-shadow: 0 0 15px;
+}
+.toLeft{
+	float: left;
+}
+.toRight{
+	float: right;
+}
+/*
+@media only screen and (max-width: 480px) {
+	article{
+		width: 100%;
+		float: none;
+	}
+	aside{
+		width: 100%;
+		float: none;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 900px) {
+	article{
+		background-color: green;
+	}
+}
+
+/*
+Responsive Desingn
+*/
+
+/*text-overflow: ellipsis;*/
+
+.view-livro{
+	width: 86%;
+	margin-left: 6px;
+	overflow: hidden;
+	margin: auto;
+	margin-bottom: 5px;
+}
+
+.view-livro img{
+	width: 120px;
+	padding: 5px;
+	background-color: #f0f0f0;
+	border: solid 1px #ADADAD;
+	margin: 6px;
+	float: left;
+}
+
+.view-livro h3{
+	color: green;
+}
+
+#acervo{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+#acervo header{
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+#acervo nav{
+	position: absolute;
+	top: 60px;
+	width: 100%;
+}
+#acervo footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#acervo #conteiner{
+	margin: auto;
+	margin-top: 130px;
+	overflow: hidden;
+	max-width: 90%;
+}
+#acervo #conteiner>article{
+	float: left;
+	min-height: 500px;
+	background-color: white;
+	margin: 0;
+}
+#acervo #conteiner>article>section{
+	width: 90%;
+	margin: auto;
+	margin-top: 20px;
+}
+#acervo #conteiner>article>section h2{
+	text-align: center;
+}
+#acervo #conteiner>article>section div{
+	width: 90%;
+	margin: auto;
+	margin-bottom: 15px;
+	display: block;
+	border: solid 1px;
+	overflow: auto;
+	padding: 5px;
+}
+#acervo #conteiner>article>section div img{
+	border: solid 1px green;
+	background-color: #f0f0f0;
+	max-height: 300px;
+	padding: 5px;
+	margin: 5px;
+	float: left
+}
+#acervo #conteiner>article>section table{
+	margin: auto;
+}
+
+#acervo #conteiner>article>section table td:first-child{
+	text-align: right;
+}
+
+#acervo #conteiner>aside{
+	float: right;
+	height: 500px;
+	width: 25%;
+	margin-left: 0;
+	background-color: white;
+}
+#acervo #conteiner>aside h3{
+	text-align: right;
+	padding-right: 70px;
+}
+#acervo #conteiner>aside ul{
+	list-style: none;
+	max-height: 95%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 64%;
+	float: right;
+	padding-left: 40px;
+}
+
+#menu-acervo .letra{
+	text-align: center;
+	padding: 5px;
+	background: none;
+}
+#menu-acervo li{
+	padding: 5px;
+	background-image: url(../img/0002.png);
+	background-repeat: no-repeat;
+	width: 180px;
+}
+#menu-acervo li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding-left: 10px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	max-width: 90%;
+}

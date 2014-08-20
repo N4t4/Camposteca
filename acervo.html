@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="bt-br">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src="js/jquery.js"></script>
+	<title>CamposTeca - Home</title>
+</head>
+<body id="acervo">
+	<header class="gb-color1">
+		<img src="img/logo.png">
+		<img class="toRight" src="img/cj.png" style="right: 0">
+	</header>
+	<nav class="gb-color1 border-color1 shadow">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="#">Acervo</a></li>
+			<li><a href="eventos.html">Eventos</a></li>
+			<li><a href="historia.html">Hist&oacute;ria</a></li>
+			<li><a href="leitura">Leituras</a></li>
+		</ul>
+	</nav>
+		<div id="conteiner" class="border-color1">
+			<article>
+				<section>
+					<h2>IRACEMA</h2>
+					<div>
+						<img src="source/iracema.jpg">
+						<p>Iracema é uma virgem tabajara - tribo que, durante a colonização, luta contra os portugueses a favor dos franceses - e se apaixona por Martim, um conquistador luso, numa história de amor que procura sintetizar contradições do então nascente povo do Brasil.
+						</p>
+					</div>
+					<table>
+						<tr><td>Autor:</td><td><strong>ALENCAR, JOSE DE</strong></td></tr>
+						<tr><td>Cole&ccedil;&atilde;o:</td><td><strong>L&PM POCKET, V.74</strong></td></tr>
+						<tr><td>Idioma:</td><td><strong>PORTUGUES</strong></td></tr>
+						<tr><td>Assunto:</td><td><strong>LITERATURA BRASILEIRA - ROMANCES</strong></td></tr>
+					</table>
+				</section>
+			</article>
+			<aside>
+				<h3>Titulos</h3>
+				<ul id="menu-acervo">
+					<li class="letra">A</li>
+					<li><a href="#">Livro 1 de uma colecao de 10</a></li>
+					<li><a href="#">Livro 2</a></li>
+					<li><a href="#">Livro 4</a></li>
+					<li><a href="#">Livro 5</a></li>
+					<li class="letra">B</li>
+					<li><a href="#">Livro 1</a></li>
+					<li><a href="#">Livro 2</a></li>
+					<li><a href="#">Livro 4</a></li>
+					<li><a href="#">Livro 5</a></li>
+					<li class="letra">C</li>
+					<li><a href="#">Livro 1</a></li>
+					<li><a href="#">Livro 2</a></li>
+					<li><a href="#">Livro 4</a></li>
+					<li><a href="#">Livro 5</a></li>
+					<li class="letra">D</li>
+					<li><a href="#">Livro 1</a></li>
+					<li><a href="#">Livro 2</a></li>
+					<li><a href="#">Livro 4</a></li>
+					<li><a href="#">Livro 5</a></li>
+					<li class="letra">E</li>
+					<li><a href="#">Livro 1</a></li>
+					<li><a href="#">Livro 2</a></li>
+					<li><a href="#">Livro 4</a></li>
+					<li><a href="#">Livro 5</a></li>
+					<li class="letra">F</li>
+					<li><a href="#">Livro 1</a></li>
+					<li><a href="#">Livro 2</a></li>
+					<li><a href="#">Livro 4</a></li>
+					<li><a href="#">Livro 5</a></li>
+				</ul>
+			</aside>
+		</div>
+	<footer class="gb-color1 shadow">
+	tel
+	</footer>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#menu-acervo li a").mouseenter(function () {
+			$(this).parent().animate(
+				{"margin-left": "-=40px"},
+				500
+			);
+		});
+		$("#menu-acervo li a").mouseleave(function () {
+			$(this).parent().animate(
+				{"margin-left": 0},
+				500
+			);
+		});
+	});
+	</script>
+
+</body>
+</html>
