@@ -17,7 +17,7 @@ body>header{
 }
 body>header img{
 	margin: 3px;
-	width: 110px;
+	width: 170px;
 }
 h1{
 	padding-top: 20px;
@@ -40,7 +40,6 @@ body>nav ul{
 	overflow: hidden;
 	display: table;
 	margin: auto;
-	background-image: url(../img/0001.png);
 	background-repeat: no-repeat;
 	padding-bottom: 6px;
 }
@@ -99,44 +98,18 @@ body>nav ul li a:hover{
 	background-color: white;
 }
 
-.gb-color1{
-	background-color: #0caa60;
-}
-.border-color1{
-	border: 1px solid #0caa60;
-}
-.shadow{
-	box-shadow: 0 0 15px;
-}
-.toLeft{
-	float: left;
-}
-.toRight{
-	float: right;
-}
-/*
-@media only screen and (max-width: 480px) {
-	article{
-		width: 100%;
-		float: none;
-	}
-	aside{
-		width: 100%;
-		float: none;
-	}
-}
+.bg-menu-home{ background-image: url(../img/menu-home.png); }
+.bg-menu-acervo{ background-image: url(../img/manu-acervo.png); }
+.bg-menu-eventos{ background-image: url(../img/menu-eventos.png); }
+.bg-menu-historia{ background-image: url(../img/menu-historia.png); }
+.bg-menu-leitura{ background-image: url(../img/menu-leitura.png); }
 
-@media only screen and (min-width: 480px) and (max-width: 900px) {
-	article{
-		background-color: green;
-	}
-}
-
-/*
-Responsive Desingn
-*/
-
-/*text-overflow: ellipsis;*/
+.gb-color1{	background-color: #0caa60;}
+.border-color1{	border: 1px solid #0caa60;}
+.shadow{ box-shadow: 0 0 15px;}
+.toLeft{ float: left;}
+.toRight{ float: right;}
+.hide{ display: none;}
 
 .view-livro{
 	width: 86%;
@@ -145,7 +118,6 @@ Responsive Desingn
 	margin: auto;
 	margin-bottom: 5px;
 }
-
 .view-livro img{
 	width: 120px;
 	padding: 5px;
@@ -154,7 +126,6 @@ Responsive Desingn
 	margin: 6px;
 	float: left;
 }
-
 .view-livro h3{
 	color: green;
 }
@@ -164,7 +135,6 @@ Responsive Desingn
 	width: 100%;
 	overflow: hidden;
 }
-
 #acervo header{
 	position: absolute;
 	top: 0;
@@ -172,7 +142,7 @@ Responsive Desingn
 }
 #acervo nav{
 	position: absolute;
-	top: 60px;
+	top: 90px;
 	width: 100%;
 }
 #acervo footer{
@@ -180,10 +150,9 @@ Responsive Desingn
 	bottom: 0;
 	width: 100%;
 }
-
 #acervo #conteiner{
 	margin: auto;
-	margin-top: 130px;
+	margin-top: 146px;
 	overflow: hidden;
 	max-width: 90%;
 }
@@ -259,6 +228,7 @@ Responsive Desingn
 	width: 180px;
 }
 #menu-acervo li a{
+	text-transform: capitalize;
 	display: block;
 	color: white;
 	text-decoration: none;
@@ -268,3 +238,23 @@ Responsive Desingn
 	white-space: nowrap;
 	max-width: 90%;
 }
+
+/*
+	Responsive Desingn
+	@media only screen and (max-width: 480px) {
+		article{
+			width: 100%;
+			float: none;
+		}
+		aside{
+			width: 100%;
+			float: none;
+		}
+	}
+
+	@media only screen and (min-width: 480px) and (max-width: 900px) {
+		article{
+			background-color: green;
+		}
+	}
+*/

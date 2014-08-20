@@ -11,7 +11,7 @@
 		<img class="toRight" src="img/cj.png" style="right: 0">
 	</header>
 	<nav class="gb-color1 border-color1 shadow">
-		<ul>
+		<ul class="bg-menu-acervo">
 			<li><a href="home.html">Home</a></li>
 			<li><a href="#">Acervo</a></li>
 			<li><a href="eventos.html">Eventos</a></li>
@@ -20,19 +20,20 @@
 		</ul>
 	</nav>
 		<div id="conteiner" class="border-color1">
-			<article>
+			<article id="view-livro">
 				<section>
-					<h2>IRACEMA</h2>
+					<h2>titulo</h2>
 					<div>
 						<img src="source/iracema.jpg">
-						<p>Iracema é uma virgem tabajara - tribo que, durante a colonização, luta contra os portugueses a favor dos franceses - e se apaixona por Martim, um conquistador luso, numa história de amor que procura sintetizar contradições do então nascente povo do Brasil.
-						</p>
+						<p>descricao</p>
 					</div>
 					<table>
-						<tr><td>Autor:</td><td><strong>ALENCAR, JOSE DE</strong></td></tr>
-						<tr><td>Cole&ccedil;&atilde;o:</td><td><strong>L&PM POCKET, V.74</strong></td></tr>
-						<tr><td>Idioma:</td><td><strong>PORTUGUES</strong></td></tr>
-						<tr><td>Assunto:</td><td><strong>LITERATURA BRASILEIRA - ROMANCES</strong></td></tr>
+						<tbody>
+							<tr><td>Autor:</td><td><strong>ALENCAR, JOSE DE</strong></td></tr>
+							<tr><td>Cole&ccedil;&atilde;o:</td><td><strong>L&PM POCKET, V.74</strong></td></tr>
+							<tr><td>Idioma:</td><td><strong>PORTUGUES</strong></td></tr>
+							<tr><td>Assunto:</td><td><strong>LITERATURA BRASILEIRA - ROMANCES</strong></td></tr>
+						</tbody>
 					</table>
 				</section>
 			</article>
@@ -40,35 +41,33 @@
 				<h3>Titulos</h3>
 				<ul id="menu-acervo">
 					<li class="letra">A</li>
-					<li><a href="#">Livro 1 de uma colecao de 10</a></li>
-					<li><a href="#">Livro 2</a></li>
-					<li><a href="#">Livro 4</a></li>
-					<li><a href="#">Livro 5</a></li>
-					<li class="letra">B</li>
-					<li><a href="#">Livro 1</a></li>
-					<li><a href="#">Livro 2</a></li>
-					<li><a href="#">Livro 4</a></li>
-					<li><a href="#">Livro 5</a></li>
-					<li class="letra">C</li>
-					<li><a href="#">Livro 1</a></li>
-					<li><a href="#">Livro 2</a></li>
-					<li><a href="#">Livro 4</a></li>
-					<li><a href="#">Livro 5</a></li>
-					<li class="letra">D</li>
-					<li><a href="#">Livro 1</a></li>
-					<li><a href="#">Livro 2</a></li>
-					<li><a href="#">Livro 4</a></li>
-					<li><a href="#">Livro 5</a></li>
-					<li class="letra">E</li>
-					<li><a href="#">Livro 1</a></li>
-					<li><a href="#">Livro 2</a></li>
-					<li><a href="#">Livro 4</a></li>
-					<li><a href="#">Livro 5</a></li>
-					<li class="letra">F</li>
-					<li><a href="#">Livro 1</a></li>
-					<li><a href="#">Livro 2</a></li>
-					<li><a href="#">Livro 4</a></li>
-					<li><a href="#">Livro 5</a></li>
+					<li>
+						<a href="#">Agosto</a>
+						<p class="hide">source/agosto.jpg</p>
+						<textarea class="hide">1º de agosto de 1954, Rio de Janeiro, capital da República. Um empresário é assassinado e outro crime é planejado na sede do governo federal. O atentado frustrado contra o jornalista Carlos Lacerda, opositor de Getúlio Vargas, causará uma das maiores reviravoltas da história do Brasil. 'Agosto' questiona o leitor em que medida a história de uma pessoa e a história de um país se determinam, se diferenciam e se assemelham.</textarea>
+						<table class="hide">
+							<tbody>
+								<tr><td>Autor:</td><td><strong>FONSECA, RUBEM</strong></td></tr>
+								<tr><td>Editora:</td><td><strong>AGIR</strong></td></tr>
+								<tr><td>Idioma:</td><td><strong>PORTUGUES</strong></td></tr>
+								<tr><td>Assunto:</td><td><strong>LITERATURA ESTRANGEIRA - FICÇÃO POLICIAL</strong></td></tr>
+							</tbody>
+						</table>
+					</li>
+					<li class="letra">I</li>
+					<li>
+						<a href="#">Iracema</a>
+						<p class="hide">source/iracema.jpg</p>
+						<textarea class="hide">Iracema é uma virgem tabajara - tribo que, durante a colonização, luta contra os portugueses a favor dos franceses - e se apaixona por Martim, um conquistador luso, numa história de amor que procura sintetizar contradições do então nascente povo do Brasil.</textarea>
+						<table class="hide">
+							<tbody>
+								<tr><td>Autor:</td><td><strong>ALENCAR, JOSE DE</strong></td></tr>
+								<tr><td>Cole&ccedil;&atilde;o:</td><td><strong>L&PM POCKET, V.74</strong></td></tr>
+								<tr><td>Idioma:</td><td><strong>PORTUGUES</strong></td></tr>
+								<tr><td>Assunto:</td><td><strong>LITERATURA BRASILEIRA - ROMANCES</strong></td></tr>
+							</tbody>
+						</table>
+					</li>
 				</ul>
 			</aside>
 		</div>
@@ -78,6 +77,18 @@
 
 	<script type="text/javascript">
 	$(document).ready(function() {
+
+		var default_titulo = $("#menu-acervo li a").eq(0).html();
+		var default_img    = $("#menu-acervo li a").eq(0).parent().find("p").html();
+		var default_resumo = $("#menu-acervo li a").eq(0).parent().find("textarea").val();
+		var default_table  = $("#menu-acervo li a").eq(0).parent().find("tbody").html();
+
+		$("#view-livro").find("h2").html(default_titulo);
+		$("#view-livro").find("img").attr("src", default_img);
+		$("#view-livro").find("p").html(default_resumo);
+		$("#view-livro").find("tbody").html(default_table);
+
+
 		$("#menu-acervo li a").mouseenter(function () {
 			$(this).parent().animate(
 				{"margin-left": "-=40px"},
@@ -89,6 +100,20 @@
 				{"margin-left": 0},
 				500
 			);
+		});
+		$("#menu-acervo li a").click(function() {
+			var titulo = $(this).html();
+			var img    = $(this).parent().find("p").html();
+			var resumo = $(this).parent().find("textarea").val();
+			var table  = $(this).parent().find("tbody").html();
+
+			$("#view-livro").animate({"opacity": 0}, 500, function() {
+				$("#view-livro").find("h2").html(titulo);
+				$("#view-livro").find("img").attr("src", img);
+				$("#view-livro").find("p").html(resumo);
+				$("#view-livro").find("tbody").html(table);
+				$(this).animate({"opacity": 1}, 500)
+			});
 		});
 	});
 	</script>
