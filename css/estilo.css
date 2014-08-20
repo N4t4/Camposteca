@@ -109,7 +109,21 @@ body>nav ul li a:hover{
 .shadow{ box-shadow: 0 0 15px;}
 .toLeft{ float: left;}
 .toRight{ float: right;}
+.toCenter{ margin: auto; display: block;}
 .hide{ display: none;}
+
+.artigo p{
+	padding: 10px;
+	text-indent: 1.5em;
+}
+.artigo img{
+	padding: 10px;
+	max-width: 90%;
+	margin: 5px;
+}
+.artigo .toCenter{
+	margin: auto;
+}
 
 .view-livro{
 	width: 86%;
@@ -128,6 +142,31 @@ body>nav ul li a:hover{
 }
 .view-livro h3{
 	color: green;
+}
+
+.view-evento{
+	width: 86%;
+	margin-left: 6px;
+	overflow: hidden;
+	margin: auto;
+	margin-bottom: 5px;
+}
+.view-evento img{
+	width: 40%;
+	padding: 5px;
+	background-color: #f0f0f0;
+	border: solid 1px #ADADAD;
+	margin: auto;
+	margin-bottom: 5px;
+	display: block;
+
+}
+.view-evento h3{
+	color: green;
+	padding-left: 10px;
+}
+.view-evento p{
+	padding: 10px;
 }
 
 #acervo{
@@ -182,7 +221,7 @@ body>nav ul li a:hover{
 #acervo #conteiner>article>section div img{
 	border: solid 1px green;
 	background-color: #f0f0f0;
-	max-height: 300px;
+	max-height: 240px;
 	padding: 5px;
 	margin: 5px;
 	float: left
