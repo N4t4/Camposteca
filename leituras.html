@@ -2,11 +2,37 @@
 <html lang="bt-br">
 <head>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<title>CamposTeca - Home</title>
+	<script src="js/jquery.js"></script>
+	<script src="js/global.js"></script>
+	<link rel="shortcut icon" href="img/ct.ico" />
+	<title>CamposTeca - Leituras</title>
 </head>
 <body>
+
+<!--FaceBook -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=602348016552289&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+<!-- End-FaceBook -->
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=602348016552289&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+
 	<header class="gb-color1">
-		<img src="img/logo.png">
+		<a href="home.html"><img src="img/logo.png"></a>
 		<img class="toRight" src="img/cj.png" style="right: 0">
 	</header>
 	<nav class="gb-color1 border-color1 shadow">
@@ -19,22 +45,53 @@
 		</ul>
 	</nav>
 		<div id="conteiner">
-			<article class="border-color1">
+			<article class="border-color1" id="leitura">
 				<h2>Leitura</h2>
-
+				<h3>Lolita</h3>
+				<img class="border-color1" src="source/livros/lolita.jpg">
+				<p>A obra 'Lolita' narra o amor obsessivo de Humbert Humbert, um c&iacute;nico intelectual de meia-idade, por Dolores Haze, Lolita, 12 anos, uma ninfeta que inflama suas loucuras e seus desejos mais agudos.</p>
+				<section class="comentarios">
+					<strong>Comentarios</strong>
+					<div class="fb-comments" data-href="http://localhost/camposteca/comments" data-numposts="5" data-colorscheme="light"></div>
+				</section>
 			</article>
 
 			<aside class="border-color1">
-				<h2>Eventos</h2>
-				<ul>
-					<li>
-					</li>
-					COMEÇA NESTA 5ª FEIRA, 7 DE AGOSTO, ÀS 19H UMA OPORTUNIDADE ÚNICA EM CAMPOS DO JORDÃO
-					</li>
-				</ul>
+				<h2>Eventos</h2>				
+				<div class="menu-2">
+				    <div class="main">
+						<ul id="source">
+						    <li><a href="#">
+						    	<strong>Evento1</strong>
+						    	<p>descricao evento</p>
+						    	<p class="date">12/12/12</p>
+						    </a></li>
+						    <li><a href="#"> <strong>Evento2</strong> <p>descricao evento</p> <p class="date">12/12/12</p></a></li>
+						    <li><a href="#"> <strong>Evento3</strong> <p>descricao evento</p> <p class="date">12/12/12</p></a></li>
+						    <li><a href="#"> <strong>Evento4</strong> <p>descricao evento</p> <p class="date">12/12/12</p></a></li>
+						    <li><a href="#"> <strong>Evento5</strong> <p>descricao evento</p> <p class="date">12/12/12</p></a></li>
+						    <li><a href="#"> <strong>Evento6</strong> <p>descricao evento</p> <p class="date">12/12/12</p></a></li>
+						    <li><a href="#"> <strong>Evento7</strong> <p>descricao evento</p> <p class="date">12/12/12</p></a></li>
+						    <li><a href="#"> <strong>Evento8</strong> <p>descricao evento</p> <p class="date">12/12/12</p></a></li>
+					    </ul>
+						
+						<ul id="view">
+						    <li><a href="#"><p></p><p class="date"></p></a></li>
+						    <li><a href="#"><p></p><p class="date"></p></a></li>
+						    <li><a href="#"><p></p><p class="date"></p></a></li>
+						    <li><a href="#"><p></p><p class="date"></p></a></li>
+						    <li><a href="#"><p></p><p class="date"></p></a></li>
+						    <li><a href="#"><p></p><p class="date"></p></a></li>
+						    <li><a href="#"><p></p><p class="date"></p></a></li>
+						    <li><a href="#"><p></p><p class="date"></p></a></li>
+					    </ul>
+				    </div>
+				</div>	
 				<h2>Doe Livros</h2>
+				<p>Uma boa a&ccedil;&atilde;o que vai abrir muito mais que sorrisos: vai abrir novos hirizontes. Click <a href="contato.html">aqui</a></p>
 			</aside>
 		</div>
 	<footer class="gb-color1 shadow"></footer>
+	<script src="js/menu-2.js"></script>
 </body>
 </html>

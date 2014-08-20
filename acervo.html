@@ -2,12 +2,13 @@
 <html lang="bt-br">
 <head>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="shortcut icon" href="img/ct.ico" />
 	<script src="js/jquery.js"></script>
-	<title>CamposTeca - Home</title>
+	<title>CamposTeca - Acervo</title>
 </head>
 <body id="acervo">
 	<header class="gb-color1">
-		<img src="img/logo.png">
+		<a href="home.html"><img src="img/logo.png"></a>
 		<img class="toRight" src="img/cj.png" style="right: 0">
 	</header>
 	<nav class="gb-color1 border-color1 shadow">
@@ -16,7 +17,7 @@
 			<li><a href="#">Acervo</a></li>
 			<li><a href="eventos.html">Eventos</a></li>
 			<li><a href="historia.html">Hist&oacute;ria</a></li>
-			<li><a href="leitura">Leituras</a></li>
+			<li><a href="leituras.html">Leituras</a></li>
 		</ul>
 	</nav>
 		<div id="conteiner" class="border-color1">
@@ -28,12 +29,7 @@
 						<p>descricao</p>
 					</div>
 					<table>
-						<tbody>
-							<tr><td>Autor:</td><td><strong>ALENCAR, JOSE DE</strong></td></tr>
-							<tr><td>Cole&ccedil;&atilde;o:</td><td><strong>L&PM POCKET, V.74</strong></td></tr>
-							<tr><td>Idioma:</td><td><strong>PORTUGUES</strong></td></tr>
-							<tr><td>Assunto:</td><td><strong>LITERATURA BRASILEIRA - ROMANCES</strong></td></tr>
-						</tbody>
+						<tbody></tbody>
 					</table>
 				</section>
 			</article>
@@ -61,7 +57,10 @@
 						<textarea class="hide">Iracema é uma virgem tabajara - tribo que, durante a colonização, luta contra os portugueses a favor dos franceses - e se apaixona por Martim, um conquistador luso, numa história de amor que procura sintetizar contradições do então nascente povo do Brasil.</textarea>
 						<table class="hide">
 							<tbody>
-								<tr><td>Autor:</td><td><strong>ALENCAR, JOSE DE</strong></td></tr>
+								<tr>
+									<td>Autor:</td>
+									<td><strong>ALENCAR, JOSE DE</strong></td>
+								</tr>
 								<tr><td>Cole&ccedil;&atilde;o:</td><td><strong>L&PM POCKET, V.74</strong></td></tr>
 								<tr><td>Idioma:</td><td><strong>PORTUGUES</strong></td></tr>
 								<tr><td>Assunto:</td><td><strong>LITERATURA BRASILEIRA - ROMANCES</strong></td></tr>
@@ -78,10 +77,13 @@
 	<script type="text/javascript">
 	$(document).ready(function() {
 
-		var default_titulo = $("#menu-acervo li a").eq(0).html();
-		var default_img    = $("#menu-acervo li a").eq(0).parent().find("p").html();
-		var default_resumo = $("#menu-acervo li a").eq(0).parent().find("textarea").val();
-		var default_table  = $("#menu-acervo li a").eq(0).parent().find("tbody").html();
+		//Sorteia um inteiro até o total de livros
+		var indice_livro = Math.floor((Math.random() * $("#menu-acervo li a").length));
+
+		var default_titulo = $("#menu-acervo li a").eq(indice_livro).html();
+		var default_img    = $("#menu-acervo li a").eq(indice_livro).parent().find("p").html();
+		var default_resumo = $("#menu-acervo li a").eq(indice_livro).parent().find("textarea").val();
+		var default_table  = $("#menu-acervo li a").eq(indice_livro).parent().find("tbody").html();
 
 		$("#view-livro").find("h2").html(default_titulo);
 		$("#view-livro").find("img").attr("src", default_img);

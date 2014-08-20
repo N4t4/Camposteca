@@ -2,11 +2,26 @@
 <html lang="bt-br">
 <head>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="shortcut icon" href="img/ct.ico" />
+	<script src="js/jquery.js"></script>
+	<script src="js/global.js"></script>
 	<title>CamposTeca - Home</title>
 </head>
 <body>
+<!--FaceBook -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=602348016552289&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+<!-- End-FaceBook -->
+
 	<header class="gb-color1">
-		<img src="img/logo.png">
+		<a href="home.html"><img src="img/logo.png"></a>
 		<img class="toRight" src="img/cj.png" style="right: 0">
 	</header>
 	<nav class="gb-color1 border-color1 shadow">
@@ -15,7 +30,7 @@
 			<li><a href="acervo.html">Acervo</a></li>
 			<li><a href="eventos.html">Eventos</a></li>
 			<li><a href="historia.html">Hist&oacute;ria</a></li>
-			<li><a href="leitura.html">Leituras</a></li>
+			<li><a href="leituras.html">Leituras</a></li>
 		</ul>
 	</nav>
 		<div id="conteiner">
@@ -38,21 +53,51 @@
 					<img src="source/livros/lolita.jpg"> <h3>LOLITA</h3> <p>Primeiro livro da literatura ocidental, a 'Ilíada' parece se tratar, pelo título, apenas de um breve incidente ocorrido no cerco dos gregos à cidade troiana de Ílion, a crônica de aproximadamente cinquenta dias de uma guerra que durou dez anos. No entanto, graças à maestria de seu autor, essa janela no tempo se abre para paisagens vastíssimas, repletas de personagens e eventos que ficariam marcados para sempre no imaginário ocidental.</p>
 				</article>
 			</article>
-
 			<aside class="border-color1">
-				<h2>Eventos</h2>
-				<ul>
-					<li>
-					</li>
-					COMEÇA NESTA 5ª FEIRA, 7 DE AGOSTO, ÀS 19H UMA OPORTUNIDADE ÚNICA EM CAMPOS DO JORDÃO
-					</li>
-				</ul>
+				<h2>Eventos</h2>				
+				<div class="menu-2">
+				    <div class="main">
+						<ul id="source">
+						    <li><a href="#">
+						    	<strong>Evento1</strong>
+						    	<p>descricao evento</p>
+						    	<p class="date">12/12/12</p>
+						    </a></li>
+						    <li><a href="#"> <strong>Evento2</strong> <p>descricao evento</p> <p class="date">12/12/12</p> </a></li>
+						    <li><a href="#"> <strong>Evento3</strong> <p>descricao evento</p> <p class="date">12/12/12</p> </a></li>
+						    <li><a href="#"> <strong>Evento4</strong> <p>descricao evento</p> <p class="date">12/12/12</p> </a></li>
+						    <li><a href="#"> <strong>Evento5</strong> <p>descricao evento</p> <p class="date">12/12/12</p> </a></li>
+						    <li><a href="#"> <strong>Evento6</strong> <p>descricao evento</p> <p class="date">12/12/12</p> </a></li>
+						    <li><a href="#"> <strong>Evento7</strong> <p>descricao evento</p> <p class="date">12/12/12</p> </a></li>
+						    <li><a href="#"> <strong>Evento8</strong> <p>descricao evento</p> <p class="date">12/12/12</p> </a></li>
+					    </ul>
+						
+						<ul id="view">
+						    <li><a href="#"><p></p><p class="date"></p></a></li>
+						    <li><a href="#"><p></p><p class="date"></p></a></li>
+						    <li><a href="#"><p></p><p class="date"></p></a></li>
+						    <li><a href="#"><p></p><p class="date"></p></a></li>
+						    <li><a href="#"><p></p><p class="date"></p></a></li>
+						    <li><a href="#"><p></p><p class="date"></p></a></li>
+						    <li><a href="#"><p></p><p class="date"></p></a></li>
+						    <li><a href="#"><p></p><p class="date"></p></a></li>
+					    </ul>
+				    </div>
+				</div>	
 				<h2>Doe Livros</h2>
+				<p>Uma boa a&ccedil;&atilde;o que vai abrir muito mais que sorrisos: vai abrir novos hirizontes. Click <a href="contato.html">aqui</a></p>
 				<h2>Facebook</h2>
 				<div id="facebook">
+					<div class="fb-comments" data-href="http://localhost/camposteca/comments" data-numposts="5" data-colorscheme="light"></div>
 				</div>
 			</aside>
 		</div>
 	<footer class="gb-color1 shadow"></footer>
+	<script src="js/menu-2.js">
+		Rua Dr. Altino Arantes, 80
+		12460-000 Campos do Jordão
+		Telefone	012 3664-2992
+		E-mail	bibliotecacamposdojordao@bol.com.br
+	</script>
 </body>
 </html>

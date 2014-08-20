@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="bt-br">
 <head>
-	<link rel="stylesheet" type="text/css" href="estilo.css">
-	<title>CamposTeca - Home</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="shortcut icon" href="img/ct.ico" />
+	<title>CamposTeca - Contato</title>
 </head>
 <body>
 	<header class="gb-color1">
-		<img src="img/logo.png">
+		<a href="home.html"><img src="img/logo.png"></a>
 		<img class="toRight" src="img/cj.png" style="right: 0">
 	</header>
 	<nav class="gb-color1 border-color1 shadow">
-		<ul>
+		<ul class="bg-menu-default">
 			<li><a href="home.html">Home</a></li>
 			<li><a href="acervo.html">Acervo</a></li>
 			<li><a href="eventos.html">Eventos</a></li>
@@ -20,19 +21,41 @@
 	</nav>
 		<div id="conteiner">
 			<article class="border-color1">
+				
+
 				<h2>Contato</h2>
+				<p>Deixe seu contato para demonstrar seu interece em ajudar a biblioteca municipal.</p>
+				<form name="form" action="mailto:brunofcosouza@gmail.com" method="post" enctype="text/plain">
+					<table class="formulario">
+						<tr>
+							<td>Nome:</td>
+							<td><input type="text" name="nome" size="20" /></td>
+						</tr>
+						<tr>
+							<td>Telefone:</td>
+							<td>(<input type="text" name="telefone" size="1" maxlength="2" />)<input type="text" name="telefone" size="8" /></td>
+						</tr>
+						<tr>
+							<td>Cidade:</td>
+							<td><input type="text" name="telefone" size="8" /></td>
+						</tr>
+						<tr>
+							<td>Titulo do livro <br>que deseja doar:</td>
+							<td><input type="text" name="livro"/></td>
+						</tr>
+						<tr><td colspan="2"><input class="toCenter" type="submit" value="enviar"/></td></tr>
+					</table>
+				</form>
 				
 			</article>
 
 			<aside class="border-color1">
-				<h2>Eventos</h2>
-				<ul>
-					<li>
-					</li>
-					COMEÇA NESTA 5ª FEIRA, 7 DE AGOSTO, ÀS 19H UMA OPORTUNIDADE ÚNICA EM CAMPOS DO JORDÃO
-					</li>
-				</ul>
-				<h2>Doe Livros</h2>
+				<strong>Rua Dr. Altino Arantes, 80</strong>
+				<br> 
+				<strong>12460-000 Campos do Jordão</strong>
+				<br> 
+				<strong>Telefone: (012) 3664-2992</strong>
+				<strong>bibliotecacamposdojordao@bol.com.br</strong>
 			</aside>
 		</div>
 	<footer class="gb-color1 shadow"></footer>

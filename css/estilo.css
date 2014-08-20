@@ -75,7 +75,7 @@ body>nav ul li a:hover{
 }
 #conteiner>article{
 	float: left;
-	min-height: 800px;
+	min-height: 600px;
 	margin: auto;
 	width: 70%;
 	background-color: white;
@@ -90,24 +90,77 @@ body>nav ul li a:hover{
 	padding-top: 10px;
 	color: green;
 }
+#conteiner>article p{
+	text-indent: 1.5em;
+	padding: 10px;
+}
 #conteiner>aside{
 	float: left;
-	height: 500px;
 	width: 29%;
 	margin-left: 0.35%;
 	background-color: white;
 }
 #conteiner>aside>h2{
-	text-indent: 0.5em;
+	text-indent: 0.2em;
+}
+#conteiner>aside>p{
+	padding: 5px;
+	text-indent: 1.5em;
+}
+#conteiner>aside>strong{
+	padding: 10px;
+	font-size: 12px;
+	color: #0caa60;
+	text-align: center;
+	width: 100%;
+	display: block;
 }
 
 #facebook{
-	background-color: blue;
+	background-color: #e9eaed;
 	min-height: 100px;
-	width: 98%;
-	margin:auto;
+	margin-bottom: 10px;
 }
 
+.comentarios{
+	padding: 10px;
+	min-height: 100px;
+	background-color: #e9eaed;
+	margin-bottom: 30px;
+}
+.comentarios strong{
+	padding-left: 10px;
+	text-decoration: underline;
+	color: #3b5998;
+}
+
+.formulario{
+	margin: auto;
+	font-size: 24px;
+}
+.formulario tr{
+	height: 56px;
+}
+.formulario td:first-child{
+	text-align: right;
+}
+.formulario input{
+	border-radius: 5px;
+}
+.formulario input[type=text]{
+	font-size: 24px;
+	background-color:  rgba(0, 255,0,0.2);	
+	padding: 2px;
+}
+.formulario input[type=submit]{
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: solid 1px;
+	background-color: #0caa60; 
+}
+
+.bg-menu-default{ background-image: url(../img/menu-default.png); }
 .bg-menu-home{ background-image: url(../img/menu-home.png); }
 .bg-menu-acervo{ background-image: url(../img/manu-acervo.png); }
 .bg-menu-eventos{ background-image: url(../img/menu-eventos.png); }
@@ -180,6 +233,19 @@ body>nav ul li a:hover{
 }
 .view-evento p{
 	padding: 10px;
+}
+
+#leitura h3{
+	text-align: center;
+	font-size: 34px;
+}
+#leitura img{
+	margin: auto;
+	display: block;
+	padding: 5px;
+	background-color: #f0f0f0;
+	border: 3px double #0caa60;
+	max-height: 300px;
 }
 
 #acervo{
@@ -290,6 +356,75 @@ body>nav ul li a:hover{
 	white-space: nowrap;
 	max-width: 90%;
 }
+
+.menu-2{
+	width: 350px;
+    color: #000000;
+}
+.menu-2>*{
+	margin: 0;
+	padding: 0;
+    border: none;
+}
+.menu-2 p{
+	font-size: 12px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.menu-2>h2{
+	display: block;
+	width: 100%;
+	height:8.333%;
+}
+.menu-2 .main{
+	height: 90%;
+	overflow: hidden;
+	height:91.633%;
+}
+.menu-2 #source{
+	display: none;
+}
+.menu-2>.main>#view{
+	list-style: none;
+	height: auto;
+	padding: 10px;
+}
+.menu-2>.main>#view>li{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-bottom: dashed 2px rgba(0, 71, 0, 0.32);
+	position: relative;
+	display: block;
+	top: 0;
+}
+.menu-2>.main>#view>li>a{
+	text-decoration: none;
+	width: 100%;
+	display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgba(0, 71, 0, 0.67);
+}
+.menu-2>.main>#view>li>a:hover{
+	background-color:  rgba(0, 255,0,0.2);
+}
+.menu-2>.main>#view>li>a:visited{
+    color: rgba(0, 71, 0, 0.32);
+}
+.menu-2>.main>#view>li>a>p{
+	width: 100%;
+}
+.menu-2>.main>#view>li>a>.img_data{
+	display: none;
+}
+
+.menu-2{
+	position: relative;
+	height: 300px;
+	width: 300px;
+}
+
 
 /*
 	Responsive Desingn
