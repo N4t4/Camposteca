@@ -70,14 +70,14 @@ body>nav ul li a:hover{
 
 #conteiner{
 	margin: auto;
-	max-width: 60%;
+	max-width: 80%;
 	margin-bottom: 10px;
 }
 #conteiner>article{
 	float: left;
 	min-height: 800px;
 	margin: auto;
-	width: 75%;
+	width: 70%;
 	background-color: white;
 	margin-left: -2px;
 }
@@ -93,9 +93,19 @@ body>nav ul li a:hover{
 #conteiner>aside{
 	float: left;
 	height: 500px;
-	width: 24%;
+	width: 29%;
 	margin-left: 0.35%;
 	background-color: white;
+}
+#conteiner>aside>h2{
+	text-indent: 0.5em;
+}
+
+#facebook{
+	background-color: blue;
+	min-height: 100px;
+	width: 98%;
+	margin:auto;
 }
 
 .bg-menu-home{ background-image: url(../img/menu-home.png); }
@@ -150,6 +160,10 @@ body>nav ul li a:hover{
 	overflow: hidden;
 	margin: auto;
 	margin-bottom: 5px;
+	border-style: dashed;
+	border-left: none;
+	border-top: none;
+	border-right: none;
 }
 .view-evento img{
 	width: 40%;
@@ -159,7 +173,6 @@ body>nav ul li a:hover{
 	margin: auto;
 	margin-bottom: 5px;
 	display: block;
-
 }
 .view-evento h3{
 	color: green;
